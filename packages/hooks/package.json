@@ -3,12 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://github.com/Charitable/wpcharitable-packages/tree/main/packages/hooks",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Charitable/wpcharitable-packages",
+    "directory": "packages/hooks"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "WP Charitable",
+  "license": "ISCGPL-2.0-or-later",
   "dependencies": {
     "@wordpress/hooks": "^3.4.1"
   }
