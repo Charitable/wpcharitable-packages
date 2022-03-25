@@ -1,6 +1,6 @@
 {
-  "name": "@wpcharitable/hooks",
-  "version": "1.0.1",
+  "name": "wpcharitable-hooks",
+  "version": "1.0.6",
   "description": "",
   "main": "index.js",
   "homepage": "https://github.com/Charitable/wpcharitable-packages/tree/main/packages/hooks",
@@ -9,16 +9,22 @@
     "url": "git+https://github.com/Charitable/wpcharitable-packages",
     "directory": "packages/hooks"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "WP Charitable",
-  "license": "ISCGPL-2.0-or-later",
-  "dependencies": {
-    "@wordpress/hooks": "^3.4.1"
+  "license": "GPL-2.0-or-later",
+  "scripts": {
+    "build": "npx babel index.js -o dist/index.js"
   },
-	"publishConfig": {
-		"access": "public"
-	}
+  "dependencies": {
+    "@wordpress/hooks": "^3.5.0",
+    "core-js": "^3.21.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11"
+  }
 }

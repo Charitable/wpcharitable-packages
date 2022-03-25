@@ -1,7 +1,8 @@
 const { createHooks } = require( '@wordpress/hooks' );
 
-const Hooks = createHooks();
+window.Charitable = window.Charitable || {};
+window.Charitable.Hooks = window.Charitable.Hooks || createHooks();
 
 module.exports = {
-	CharitableHooks: Hooks
+	CharitableHooks: window.Charitable.Hooks
 };
